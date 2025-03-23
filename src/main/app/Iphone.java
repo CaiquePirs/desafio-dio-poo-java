@@ -8,6 +8,14 @@ public class Iphone implements Telefone, Navegador, ReprodutorMusical {
         this.cor = cor;
     }
 
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
     public void atender(){
         System.out.println("Atendendo chamada");
     };
@@ -21,11 +29,11 @@ public class Iphone implements Telefone, Navegador, ReprodutorMusical {
     };
 
     public void adicionarTelefone(String telefone){
-        System.out.println("Numero: " + telefone + "adicionado");
+        System.out.println("Telefone: " + telefone + " adicionado");
     };
 
     public void excluirTelefone(String telefone){
-        System.out.println("Telefone excluído");
+        System.out.println("Telefone: " + telefone + " excluído");
     };
 
     public void adicionarNovaAba(){
@@ -54,7 +62,7 @@ public class Iphone implements Telefone, Navegador, ReprodutorMusical {
     };
 
     public void selecionarMusica(String musica){
-        System.out.println("Musica: " + musica + "Selecionada");
+        System.out.println("Musica escolhida: " + musica);
     };
 
     public void excluirMusica(String musica){
